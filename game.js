@@ -933,25 +933,25 @@ function setupEventListeners() {
         if (!gameState.gameActive) return;
         
         switch (e.key) {
-            case 'ArrowLeft':
+            
             case 'a':
             case 'A':    
                 gameState.activeDirections.left = true;
                 elements.moveLeftBtn.classList.add('active');
                 break;
-            case 'ArrowUp':
+            
             case 'w':
             case 'W':
                 gameState.activeDirections.up = true;
                 elements.moveUpBtn.classList.add('active');
                 break;
-            case 'ArrowRight':
+            
             case 'd':
             case 'D':
                 gameState.activeDirections.right = true;
                 elements.moveRightBtn.classList.add('active');
                 break;
-            case 'ArrowDown':
+            
             case 's':
             case 'S':
                 gameState.activeDirections.down = true;
@@ -968,28 +968,28 @@ function setupEventListeners() {
 
     document.addEventListener('keyup', (e) => {
         switch (e.key) {
-            case 'ArrowLeft':
+            
                 case 'a':
-    case 'A':
+                case 'A':
                 gameState.activeDirections.left = false;
                 elements.moveLeftBtn.classList.remove('active');
                 break;
-            case 'ArrowUp':
+           
                 case 'w':
-    case 'W':
+                case 'W':
                 gameState.activeDirections.up = false;
                 elements.moveUpBtn.classList.remove('active');
                 break;
-            case 'ArrowRight':
-                case 'd':
-    case 'D':
+           
+            case 'd':
+            case 'D':
                 gameState.activeDirections.right = false;
                 elements.moveRightBtn.classList.remove('active');
                 break;
-            case 'ArrowDown':
-                case 'ArrowDown':
-    case 's':
-    case 'S':
+            
+               
+            case 's':
+            case 'S':
                 gameState.activeDirections.down = false;
                 elements.moveDownBtn.classList.remove('active');
                 break;

@@ -826,6 +826,8 @@ document.addEventListener('keydown', (e) => {
         // ... existing cases ...
         case 'b':
         case 'B':
+        case 'E':
+        case 'e':
             // Start charging blast if not already charging or on cooldown
             if (!gameState.blastCharging && !gameState.blastReady && !gameState.blastCooldown) {
                 gameState.blastCharging = true;
@@ -967,18 +969,27 @@ function setupEventListeners() {
     document.addEventListener('keyup', (e) => {
         switch (e.key) {
             case 'ArrowLeft':
+                case 'a':
+    case 'A':
                 gameState.activeDirections.left = false;
                 elements.moveLeftBtn.classList.remove('active');
                 break;
             case 'ArrowUp':
+                case 'w':
+    case 'W':
                 gameState.activeDirections.up = false;
                 elements.moveUpBtn.classList.remove('active');
                 break;
             case 'ArrowRight':
+                case 'd':
+    case 'D':
                 gameState.activeDirections.right = false;
                 elements.moveRightBtn.classList.remove('active');
                 break;
             case 'ArrowDown':
+                case 'ArrowDown':
+    case 's':
+    case 'S':
                 gameState.activeDirections.down = false;
                 elements.moveDownBtn.classList.remove('active');
                 break;

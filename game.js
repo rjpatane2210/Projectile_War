@@ -932,18 +932,26 @@ function setupEventListeners() {
         
         switch (e.key) {
             case 'ArrowLeft':
+            case 'a':
+            case 'A':    
                 gameState.activeDirections.left = true;
                 elements.moveLeftBtn.classList.add('active');
                 break;
             case 'ArrowUp':
+            case 'w':
+            case 'W':
                 gameState.activeDirections.up = true;
                 elements.moveUpBtn.classList.add('active');
                 break;
             case 'ArrowRight':
+            case 'd':
+            case 'D':
                 gameState.activeDirections.right = true;
                 elements.moveRightBtn.classList.add('active');
                 break;
             case 'ArrowDown':
+            case 's':
+            case 'S':
                 gameState.activeDirections.down = true;
                 elements.moveDownBtn.classList.add('active');
                 break;
